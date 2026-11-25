@@ -782,6 +782,7 @@ class SessionCompressorV3:
             transaction_handle=None,
             memory_registry=registry,
             vlm_config=vlm_config,
+            source_archive_uri=archive_uri or "",
             output_language_override=output_language_override,
         )
         await context_provider.prepare_extraction_messages()
